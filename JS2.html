@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+        function sum() {
+        	str=prompt("Please enter a word");
+	          var letter_Count = 0;
+			 for (var position = 0; position < str.length; position++) 
+			 {
+			    if (str.charAt(position) == "a"||str.charAt(position)=="e"||str.charAt(position)=="o"||str.charAt(position)=="u"||str.charAt(position)=="i") 
+			      {
+			      letter_Count += 1;
+			      }
+			  }
+			  alert(letter_Count+" vawels");
+			        }
+       
+        </script>
+    </head>
+    <body onload="sum();">
+    
+    </body>
+</html>

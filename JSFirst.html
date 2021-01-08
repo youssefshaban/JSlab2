@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+        function getInfo() {
+        	let flag = true;
+        	do{
+            let ageinput = prompt("Please enter your age");
+            if (ageinput===null){flag=false}else{
+            let age = parseInt(ageinput);
+            if (!isNaN(age)){
+             	if (age!=0){
+             	flag=false
+            	console.log(age);
+            	switch (true){
+               	case (age<=10):
+               	console.log('switch');
+               	 alert('chiled');
+               	 break;
+               	 case ((age>10) && (age<=18)):
+               	  alert('teenager');
+               	  break;
+               	   case ((age>18) && (age<=50)):
+               	   alert('grown');
+               	  break;
+               	  case (age>50):
+               	   alert('old');
+               	   break;
+               }
+           }else
+           		alert('not valid');
+       }
+            else 
+            	alert('not valid');
+               
+       }
+
+   }while(flag);}
+        </script>
+    </head>
+    <body onload="getInfo();">
+    
+    </body>
+</html>

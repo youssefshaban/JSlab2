@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+        function getInfo() {
+        	let flag = true;
+          let sam = "AM"
+            let input = prompt("Please enter the time in 24 h format");
+           if(input===null){
+           }else{
+             let hours = parseInt(input);
+             if (hours <=12){
+                alert(hours + " "+sam);
+             
+           }else if (hours >12 && hours <=24){
+            if (hours == 24){
+               alert("0"+sam);
+            }else {
+              sam = "PM";
+              alert ((hours-12)+" "+sam);
+            }
+           }
+               
+ 
+
+       
+}
+}
+        </script>
+    </head>
+    <body onload="getInfo();">
+    
+    </body>
+</html>
